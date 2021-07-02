@@ -38,12 +38,6 @@ The second plot also contains the projection in a separate chart (as a photograp
 </figure>
 
 
-<h3>Simulink simulation</h3>
-
-To execute the simulation it is first necessary to run the **init.m** file in order to declare all the costants which are used in the simulation. After that it is possible to run the simulink file **camera_model.slx** and finally it is possible to execute **plot_simulink.m** to show the results.
-
-Currently this section concerning simulink is still in progress.
-
 
 <h3>IBVS</h3>
 
