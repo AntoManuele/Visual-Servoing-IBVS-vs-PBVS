@@ -2,7 +2,7 @@
 
 The project is a simple comparison between the classical and most famous approaches to visual servoing: Image Based and Position Based. In order to do that, a Pinhole camera model has been used.
 
-The file are organized as follows:
+The files are organized as follows:
 
 - **reference_systems.m** : script that shows the reference systems *world frame* and *camera frame*;
 - **camera.m** : It is the main matlab sript. It simulates the projection in the image plane of a point and a rectangle, located in front of the camera at a fixed distance and creates the relative plots;
