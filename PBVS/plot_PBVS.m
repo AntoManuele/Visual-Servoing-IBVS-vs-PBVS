@@ -9,7 +9,7 @@ origin_axis = {'O';'X';'Y';'Z'};
 plane_y = 0.25;       % y image plane width
 plane_z = 0.18;       % z image plane height
 p1_ = out.p;
-
+time = linspace(0,length(out.error)*st,length(out.error));
 
 %% plot point
 
@@ -41,17 +41,19 @@ for i = 1:length(out.pose)
     cla(subplot(1,2,2));
     hold on
     grid on
-    axis([0 100 min(min(out.error)) max(max(out.error))])
-    plot(out.error(1:i, :))
+    axis([0 length(out.error)*st -0.2 1.5]);
+    plot(time(1:i), out.error(1:i, :))
     title('error')
     pause(0.0055);
     F(i) = getframe(gcf);
 end
 
-video = VideoWriter('PBVS.avi', 'Uncompressed AVI');
-open(video);
-writeVideo(video, F);
-close(video);
 
+%% Uncomment to create a video
+
+% video = VideoWriter('PBVS.avi', 'Uncompressed AVI');
+% open(video);
+% writeVideo(video, F);
+% close(video);
 
 
