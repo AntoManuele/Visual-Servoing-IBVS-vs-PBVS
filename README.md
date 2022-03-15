@@ -1,6 +1,6 @@
 # Visual Servoing: IBVS vs PBVS
 
-The project is a simple comparison between classic and most famous approaches to visual servoing: Image Based and Position Based. In order to do that, a Pinhole camera model has been used.
+The project is a simple comparison between classical and most famous approaches to visual servoing: Image Based and Position Based. In order to do that, a Pinhole camera model has been used.
 
 The files are organized as follows:
 
